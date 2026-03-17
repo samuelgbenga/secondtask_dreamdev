@@ -8,6 +8,8 @@ public class SumFromInput1to100Average {
 
 		int sum = 0;
 
+		int counter = 0;
+
 		for(int i = 1; i<=10; i++){
 		
 		System.out.println("Enter a number (0 - 100) :");
@@ -19,10 +21,11 @@ public class SumFromInput1to100Average {
 		//i--;
 			}else{
 		sum = sum + a;
+		counter += 1;
 		
 		}
 			
 		}
-	System.out.println("Sum of 10 inputs: " + sum); 
+	System.out.println("Average of the 10 Valid input: " + sum/counter); 
     }
 }
