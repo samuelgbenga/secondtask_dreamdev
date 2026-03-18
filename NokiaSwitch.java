@@ -176,6 +176,29 @@ public class NokiaSwitch {
                 """;
 
                 System.out.println(levelZeroOne);
+
+
+        
+        System.out.print(levelZero);
+        System.out.print("Enter an option: ");
+        int numlevelZero = input.nextInt();
+        switch (numlevelZero) {
+            case 1 -> System.out.println("Phone Book selected");
+            case 2 -> System.out.println("Messages selected");
+            case 3 -> System.out.println("Chat selected");
+            case 4 -> System.out.println("Call Register selected");
+            case 5 -> System.out.println("Tones selected");
+            case 6 -> System.out.println("Settings selected");
+            case 7 -> System.out.println("Call Divert selected");
+            case 8 -> System.out.println("Games selected");
+            case 9 -> System.out.println("Calculator selected");
+            case 10 -> System.out.println("Reminders selected");
+            case 11 -> System.out.println("Clock selected");
+            case 12 -> System.out.println("Profiles selected");
+            case 13 -> System.out.println("SIM Services selected");
+            case 0 -> System.out.println("End");
+            default -> System.out.println("Invalid option");
+        }
     }
 
     
