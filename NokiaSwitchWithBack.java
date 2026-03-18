@@ -308,7 +308,11 @@ public class NokiaSwitchWithBack {
 
             }
             case 3 -> System.out.println("Chat selected");
-            case 4 -> {System.out.println("Call Register selected");
+            case 4 -> {
+                boolean islevelZeroFour = true;
+
+                while (islevelZeroFour) {
+                    System.out.println("Call Register selected");
                          System.out.print(levelZeroFour);
         System.out.print("Enter an option: ");
         int numlevelZeroFour = input.nextInt();
@@ -378,9 +382,13 @@ public class NokiaSwitchWithBack {
                 
             }
             case 8 -> System.out.println("Prepaid Credit");
-            case 0 -> System.out.println("Back");
+            case 0 -> {System.out.println("Back");
+                islevelZeroFour = false;
+            }
             default -> System.out.println("Invalid option");
         }
+                }
+                
 
             }
             case 5 -> {
@@ -408,7 +416,10 @@ public class NokiaSwitchWithBack {
                 } 
 
             }
-            case 6 -> {System.out.println("Settings selected");
+            case 6 -> {
+                boolean islevelZeroSix = true;
+                while (islevelZeroSix) {
+                                    System.out.println("Settings selected");
 
          System.out.print(levelZeroSix);
         System.out.print("Enter an option: ");
@@ -481,9 +492,13 @@ public class NokiaSwitchWithBack {
                 
             }
             case 4 -> System.out.println("Restore factory settings");
-            case 0 -> System.out.println("Back");
+            case 0 -> {System.out.println("Back");
+                islevelZeroSix = false;
+            }
             default -> System.out.println("Invalid option");
         }
+                }
+
 
             }
             case 7 -> System.out.println("Call Divert selected");
@@ -517,11 +532,6 @@ public class NokiaSwitchWithBack {
             case 0 -> System.out.println("End");
             default -> System.out.println("Invalid option");
         }
-
-
-
-
-
     }
 
     
