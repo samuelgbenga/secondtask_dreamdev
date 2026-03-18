@@ -6,7 +6,7 @@ public class NokiaSwitch {
 
         Scanner input = new Scanner(System.in);
 
-        String levelOne = """
+        String levelZero = """
                 1  -> Phone Book
                 2  -> Messages
                 3  -> Chat
@@ -24,7 +24,7 @@ public class NokiaSwitch {
                 """;
 
         
-         String levelTwoOne = """
+         String levelZeroOne = """
                 1  -> Search
                 2  -> Service Nos
                 3  -> Add Name
@@ -39,7 +39,7 @@ public class NokiaSwitch {
                 """;
 
 
-        String levelTwoTwo = """
+        String levelZeroTwo = """
                 1  -> Write Message
                 2  -> Inbox
                 3  -> Outbox
@@ -54,7 +54,7 @@ public class NokiaSwitch {
                 """;
 
 
-        String levelTwoFour = """
+        String levelZeroFour = """
                 1  -> Missed Calls
                 2  -> Recieved Calls
                 3  -> Dailed Number
@@ -66,7 +66,7 @@ public class NokiaSwitch {
                 0  -> Back
                 """;
 
-        String levelTwoFive = """
+        String levelZeroFive = """
                 1  -> Ringing tone
                 2  -> Ringing volume
                 3  -> Incoming call alert
@@ -79,7 +79,7 @@ public class NokiaSwitch {
                 0  -> Back
                 """;
 
-        String levelTwoSix = """
+        String levelZeroSix = """
                 1  -> Call settings
                 2  -> Phone Settings
                 3  -> Security Settings
@@ -87,7 +87,7 @@ public class NokiaSwitch {
                 0  -> Back
                 """;
 
-        String levelTwoEleven = """
+        String levelZeroEleven = """
                 1  -> Alarm clock
                 2  -> Clock settings
                 3  -> Date settings
@@ -97,7 +97,45 @@ public class NokiaSwitch {
                 0  -> Back
                 """;
 
-                System.out.println(levelOne);
+        String levelZeroOneEigth = """
+                1  -> Type of view
+                2  -> Memory Status
+                0  -> Back
+                """;
+
+        String levelZeroTwoSeven = """
+                
+                """;
+
+        String levelZeroFourSix = """
+                
+                """;
+
+        String levelZeroFourSeven = """
+                
+                """;
+
+        String levelZeroSixOne = """
+                
+                """;
+
+        String levelZeroSixTwo = """
+                
+                """;
+
+        String levelZeroSixThree = """
+                
+                """;
+
+        String levelZeroTwoSevenOne = """
+                
+                """;
+
+        String levelZeroTwoSevenTwo = """
+                
+                """;
+
+                System.out.println(levelZeroOne);
     }
 
     
