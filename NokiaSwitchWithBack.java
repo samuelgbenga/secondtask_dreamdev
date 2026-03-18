@@ -288,7 +288,7 @@ public class NokiaSwitchWithBack {
           
             }
             case 0 -> {System.out.println("Back");
-                islevelZeroTwo = false;
+                islevelZeroTwoSeven = false;
             }
             default -> System.out.println("Invalid option");
 
