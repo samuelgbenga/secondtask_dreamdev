@@ -39,6 +39,34 @@ public class NokiaSwitch {
                 """;
 
 
+        String levelTwoTwo = """
+                1  -> Write Message
+                2  -> Inbox
+                3  -> Outbox
+                4  -> Picture Messages
+                5  -> Templates
+                6  -> Smileys
+                7  -> Message Settings
+                8  -> Info Service
+                9  -> Voice Mailbox Number
+                10 -> Service Command editor
+                0  -> Back
+                """;
+
+
+        String levelTwoFour = """
+                1  -> Missed Calls
+                2  -> Recieved Calls
+                3  -> Dailed Number
+                4  -> Erase recent call lists
+                5  -> Show call duration
+                6  -> Show call cost
+                7  -> Call cost settings
+                8  -> Prepaid Credit
+                0  -> Back
+                """;
+
+
                 System.out.println(levelOne);
     }
 
