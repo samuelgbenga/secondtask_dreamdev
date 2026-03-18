@@ -415,7 +415,9 @@ public class NokiaSwitchWithBack {
         int numlevelZeroSix = input.nextInt();
         switch (numlevelZeroSix) {
             case 1 -> {
-                System.out.println("Call settings");
+                boolean islevelZeroSixOne = true;
+                while (islevelZeroSixOne) {
+                   System.out.println("Call settings");
                 System.out.print(levelZeroSixOne);
                 System.out.print("Enter an option: ");
                 int numlevelZeroSixOne = input.nextInt();
@@ -426,12 +428,18 @@ public class NokiaSwitchWithBack {
                     case 4 -> System.out.println("Own number sending");
                     case 5 -> System.out.println("Phone line in use");
                     case 6 -> System.out.println("Automatic answer");
-                    case 0 -> System.out.println("Back");
+                    case 0 -> {System.out.println("Back");
+                        islevelZeroSixOne = false;
+                    }
                     default -> System.out.println("Invalid option");
-        }
+        }   
+                }
+              
             }
             case 2 -> {
-                System.out.println("Phone Settings");
+                boolean islevelZeroSixTwo = true;
+                while (islevelZeroSixTwo) {
+                  System.out.println("Phone Settings");
                 System.out.print(levelZeroSixTwo);
                 System.out.print("Enter an option: ");
                 int numlevelZeroSixTwo = input.nextInt();
@@ -442,12 +450,18 @@ public class NokiaSwitchWithBack {
                     case 4 -> System.out.println("Network selection");
                     case 5 -> System.out.println("Lights");
                     case 6 -> System.out.println("Confirm SIM service selections");
-                    case 0 -> System.out.println("Back");
+                    case 0 -> {System.out.println("Back");
+                        islevelZeroSixTwo = false;
+                    }
                     default -> System.out.println("Invalid option");
-        }
+        }   
+                }
+               
             }
             case 3 -> {
-                System.out.println("Security Settings");
+                boolean islevelZeroSixThree = true;
+                while (islevelZeroSixThree) {
+                   System.out.println("Security Settings");
                 System.out.print(levelZeroSixThree);
                 System.out.print("Enter an option: ");
                 int numlevelZeroSixThree = input.nextInt();
@@ -458,9 +472,13 @@ public class NokiaSwitchWithBack {
                     case 4 -> System.out.println("Closed user group");
                     case 5 -> System.out.println("Phone security");
                     case 6 -> System.out.println("Change access codes");
-                    case 0 -> System.out.println("Back");
+                    case 0 -> {System.out.println("Back");
+                        islevelZeroSixThree = false;
+                    }
                     default -> System.out.println("Invalid option");
+                } 
                 }
+                
             }
             case 4 -> System.out.println("Restore factory settings");
             case 0 -> System.out.println("Back");
@@ -472,7 +490,10 @@ public class NokiaSwitchWithBack {
             case 8 -> System.out.println("Games selected");
             case 9 -> System.out.println("Calculator selected");
             case 10 -> System.out.println("Reminders selected");
-            case 11 -> {System.out.println("Clock selected");
+            case 11 -> {
+                boolean islevelZeroEleven = true;
+                while (islevelZeroEleven) {
+                   System.out.println("Clock selected");
                          System.out.print(levelZeroEleven);
         System.out.print("Enter an option: ");
         int numlevelZeroEleven = input.nextInt();
@@ -483,9 +504,13 @@ public class NokiaSwitchWithBack {
             case 4 -> System.out.println("Stopwatch");
             case 5 -> System.out.println("Countdown timer");
             case 6 -> System.out.println("Auto update of date and time");
-            case 0 -> System.out.println("Back");
+            case 0 -> {System.out.println("Back");
+                islevelZeroEleven = false;
+            }
             default -> System.out.println("Invalid option");
-        }
+        } 
+                }
+                
             }
             case 12 -> System.out.println("Profiles selected");
             case 13 -> System.out.println("SIM Services selected");
