@@ -104,19 +104,41 @@ public class NokiaSwitch {
                 """;
 
         String levelZeroTwoSeven = """
-                
+                1  -> Set 1
+                2  -> Common  
+                0  -> Back
+                """;
+
+        String levelZeroFourFive = """
+                1  -> Last call duration
+                2  -> All call duration
+                3  -> Recieved calls duration
+                4  -> Dialled calls duration
+                5  -> Clear timer
+                0  -> Back
                 """;
 
         String levelZeroFourSix = """
-                
+                1  -> Last call cost
+                2  -> All call cost
+                3  -> Clear counters 
+                0  -> Back
                 """;
 
         String levelZeroFourSeven = """
-                
+                1  -> Call cost limit
+                2  -> Show costs in
+                0  -> Back
                 """;
 
         String levelZeroSixOne = """
-                
+                1  -> Automatic redial
+                2  -> Speed dialing
+                3  -> Call waiting options
+                4  -> Own number sending
+                5  -> Phone line in use
+                6  -> Automatic answer  
+                0  -> Back
                 """;
 
         String levelZeroSixTwo = """
@@ -132,7 +154,20 @@ public class NokiaSwitch {
                 """;
 
         String levelZeroTwoSevenTwo = """
+                1  -> Delivery reports
+                2  -> Reply via Same Center
+                3  -> Character support
+                0  -> Back
                 
+                """;
+
+        String testing = """
+                1  -> 
+                2  ->
+                3  ->  
+                4  ->
+                5  ->  
+                0  -> Back
                 """;
 
                 System.out.println(levelZeroOne);
