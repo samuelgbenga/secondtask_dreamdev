@@ -97,7 +97,7 @@ public class NokiaSwitch {
                 0  -> Back
                 """;
 
-        String levelZeroOneEigth = """
+        String levelZeroOneEight = """
                 1  -> Type of view
                 2  -> Memory Status
                 0  -> Back
@@ -283,6 +283,44 @@ public class NokiaSwitch {
             case 0 -> System.out.println("Back");
             default -> System.out.println("Invalid option");
         }
+
+
+         System.out.print(levelZeroEleven);
+        System.out.print("Enter an option: ");
+        int numlevelZeroEleven = input.nextInt();
+        switch (numlevelZeroEleven) {
+            case 1 -> System.out.println("Alarm clock");
+            case 2 -> System.out.println("Clock settings");
+            case 3 -> System.out.println("Date settings");
+            case 4 -> System.out.println("Stopwatch");
+            case 5 -> System.out.println("Countdown timer");
+            case 6 -> System.out.println("Auto update of date and time");
+            case 0 -> System.out.println("Back");
+            default -> System.out.println("Invalid option");
+        }
+
+
+        System.out.print(levelZeroOneEight);
+        System.out.print("Enter an option: ");
+        int numlevelZeroOneEight = input.nextInt();
+        switch (numlevelZeroOneEight) {
+            case 1 -> System.out.println("Type of view");
+            case 2 -> System.out.println("Memory Status");
+            case 0 -> System.out.println("Back");
+            default -> System.out.println("Invalid option");
+        }
+
+
+
+        System.out.print(levelZeroTwoSeven);
+        System.out.print("Enter an option: ");
+        int numlevelZeroTwoSeven = input.nextInt();
+        switch (numlevelZeroTwoSeven) {
+            case 1 -> System.out.println("Set 1");
+            case 2 -> System.out.println("Common");
+            case 0 -> System.out.println("Back");
+            default -> System.out.println("Invalid option");
+}
     }
 
     
