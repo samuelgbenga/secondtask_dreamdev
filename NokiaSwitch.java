@@ -66,6 +66,36 @@ public class NokiaSwitch {
                 0  -> Back
                 """;
 
+        String levelTwoFive = """
+                1  -> Ringing tone
+                2  -> Ringing volume
+                3  -> Incoming call alert
+                4  -> Compose
+                5  -> Message alert tone
+                6  -> Keypad tone
+                7  -> Warning and game tones
+                8  -> Vibrating alert
+                9  -> Screen Saver
+                0  -> Back
+                """;
+
+        String levelTwoSix = """
+                1  -> Call settings
+                2  -> Phone Settings
+                3  -> Security Settings
+                4  -> Restore factory settings
+                0  -> Back
+                """;
+
+        String levelTwoEleven = """
+                1  -> Alarm clock
+                2  -> Clock settings
+                3  -> Date settings
+                4  -> Stopwatch
+                5  -> Countdown timer
+                6  -> Auto update of date and time
+                0  -> Back
+                """;
 
                 System.out.println(levelOne);
     }
