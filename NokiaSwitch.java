@@ -216,6 +216,73 @@ public class NokiaSwitch {
             case 0 -> System.out.println("Back");
             default -> System.out.println("Invalid option");
         }
+
+
+        System.out.print(levelZeroTwo);
+        System.out.print("Enter an option: ");
+        int numlevelZeroTwo = input.nextInt();
+        switch (numlevelZeroTwo) {
+            case 1 -> System.out.println("Write Message");
+            case 2 -> System.out.println("Inbox");
+            case 3 -> System.out.println("Outbox");
+            case 4 -> System.out.println("Picture Messages");
+            case 5 -> System.out.println("Templates");
+            case 6 -> System.out.println("Smileys");
+            case 7 -> System.out.println("Message Settings");
+            case 8 -> System.out.println("Info Service");
+            case 9 -> System.out.println("Voice Mailbox Number");
+            case 10 -> System.out.println("Service Command editor");
+            case 0 -> System.out.println("Back");
+            default -> System.out.println("Invalid option");
+        }
+
+
+         System.out.print(levelZeroFour);
+        System.out.print("Enter an option: ");
+        int numlevelZeroFour = input.nextInt();
+        switch (numlevelZeroFour) {
+            case 1 -> System.out.println("Missed Calls");
+            case 2 -> System.out.println("Received Calls");
+            case 3 -> System.out.println("Dialed Number");
+            case 4 -> System.out.println("Erase recent call lists");
+            case 5 -> System.out.println("Show call duration");
+            case 6 -> System.out.println("Show call cost");
+            case 7 -> System.out.println("Call cost settings");
+            case 8 -> System.out.println("Prepaid Credit");
+            case 0 -> System.out.println("Back");
+            default -> System.out.println("Invalid option");
+        }
+
+
+         System.out.print(levelZeroFive);
+        System.out.print("Enter an option: ");
+        int numlevelZeroFive = input.nextInt();
+        switch (numlevelZeroFive) {
+            case 1 -> System.out.println("Ringing tone");
+            case 2 -> System.out.println("Ringing volume");
+            case 3 -> System.out.println("Incoming call alert");
+            case 4 -> System.out.println("Compose");
+            case 5 -> System.out.println("Message alert tone");
+            case 6 -> System.out.println("Keypad tone");
+            case 7 -> System.out.println("Warning and game tones");
+            case 8 -> System.out.println("Vibrating alert");
+            case 9 -> System.out.println("Screen Saver");
+            case 0 -> System.out.println("Back");
+            default -> System.out.println("Invalid option");
+        }
+
+
+         System.out.print(levelZeroSix);
+        System.out.print("Enter an option: ");
+        int numlevelZeroSix = input.nextInt();
+        switch (numlevelZeroSix) {
+            case 1 -> System.out.println("Call settings");
+            case 2 -> System.out.println("Phone Settings");
+            case 3 -> System.out.println("Security Settings");
+            case 4 -> System.out.println("Restore factory settings");
+            case 0 -> System.out.println("Back");
+            default -> System.out.println("Invalid option");
+        }
     }
 
     
