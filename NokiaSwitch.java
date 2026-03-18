@@ -175,8 +175,6 @@ public class NokiaSwitch {
                 0  -> Back
                 """;
 
-                System.out.println(levelZeroOne);
-
 
         
         System.out.print(levelZero);
@@ -197,6 +195,25 @@ public class NokiaSwitch {
             case 12 -> System.out.println("Profiles selected");
             case 13 -> System.out.println("SIM Services selected");
             case 0 -> System.out.println("End");
+            default -> System.out.println("Invalid option");
+        }
+
+
+        System.out.print(levelZeroOne);
+        System.out.print("Enter an option: ");
+        int numlevelZeroOne = input.nextInt();
+        switch (numlevelZeroOne) {
+            case 1 -> System.out.println("Search selected");
+            case 2 -> System.out.println("Service Nos selected");
+            case 3 -> System.out.println("Add Name selected");
+            case 4 -> System.out.println("Erase selected");
+            case 5 -> System.out.println("Edit selected");
+            case 6 -> System.out.println("Assign tone selected");
+            case 7 -> System.out.println("Send b'Card selected");
+            case 8 -> System.out.println("Options selected");
+            case 9 -> System.out.println("Speed dials selected");
+            case 10 -> System.out.println("Voice tags selected");
+            case 0 -> System.out.println("Back");
             default -> System.out.println("Invalid option");
         }
     }
