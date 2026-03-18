@@ -383,7 +383,10 @@ public class NokiaSwitchWithBack {
         }
 
             }
-            case 5 -> {System.out.println("Tones selected");
+            case 5 -> {
+                boolean islevelZeroFive = true;
+                while (islevelZeroFive) {
+                      System.out.println("Tones selected");
                          System.out.print(levelZeroFive);
         System.out.print("Enter an option: ");
         int numlevelZeroFive = input.nextInt();
@@ -397,9 +400,12 @@ public class NokiaSwitchWithBack {
             case 7 -> System.out.println("Warning and game tones");
             case 8 -> System.out.println("Vibrating alert");
             case 9 -> System.out.println("Screen Saver");
-            case 0 -> System.out.println("Back");
+            case 0 -> {System.out.println("Back");
+                islevelZeroFive = false;
+            }
             default -> System.out.println("Invalid option");
-        }
+        }  
+                } 
 
             }
             case 6 -> {System.out.println("Settings selected");
