@@ -142,31 +142,36 @@ public class NokiaSwitch {
                 """;
 
         String levelZeroSixTwo = """
-                
+                1  -> Language
+                2  -> Cell info display
+                3  -> Welcome note
+                4  -> Network selection
+                5  -> Lights
+                6  -> Confirm SIM service selections
+                0  -> Back
                 """;
 
         String levelZeroSixThree = """
-                
+                1  -> PIN code request
+                2  -> Call bearing service
+                3  -> Fixed dialling
+                4  -> Closed user group
+                5  -> Phone security
+                6  -> Change access codes
+                0  -> Back
                 """;
 
         String levelZeroTwoSevenOne = """
-                
+                1  -> Message centre number
+                2  -> Message sent as
+                3  -> Message validity
+                0  -> Back
                 """;
 
         String levelZeroTwoSevenTwo = """
                 1  -> Delivery reports
                 2  -> Reply via Same Center
                 3  -> Character support
-                0  -> Back
-                
-                """;
-
-        String testing = """
-                1  -> 
-                2  ->
-                3  ->  
-                4  ->
-                5  ->  
                 0  -> Back
                 """;
 
