@@ -181,38 +181,55 @@ public class NokiaSwitchWithBack {
         System.out.print("Enter an option: ");
         int numlevelZero = input.nextInt();
         switch (numlevelZero) {
-            case 1 -> {System.out.println("Phone Book selected");
-                        System.out.print(levelZeroOne);
-        System.out.print("Enter an option: ");
-        int numlevelZeroOne = input.nextInt();
-        switch (numlevelZeroOne) {
-            case 1 -> System.out.println("Search selected");
-            case 2 -> System.out.println("Service Nos selected");
-            case 3 -> System.out.println("Add Name selected");
-            case 4 -> System.out.println("Erase selected");
-            case 5 -> System.out.println("Edit selected");
-            case 6 -> System.out.println("Assign tone selected");
-            case 7 -> System.out.println("Send b'Card selected");
-            case 8 -> {
-                System.out.println("Options");
-                     System.out.print(levelZeroOneEight);
-        System.out.print("Enter an option: ");
-        int numlevelZeroOneEight = input.nextInt();
-        switch (numlevelZeroOneEight) {
-            case 1 -> System.out.println("Type of view");
-            case 2 -> System.out.println("Memory Status");
-            case 0 -> System.out.println("Back");
-            default -> System.out.println("Invalid option");
-        }
-            }
-            case 9 -> System.out.println("Speed dials selected");
-            case 10 -> System.out.println("Voice tags selected");
-            case 0 -> System.out.println("Back");
-            default -> System.out.println("Invalid option");
-        }
+            case 1 -> {
+                boolean islevelZeroOne = true;
+                while (islevelZeroOne) {
+                System.out.println("Phone Book selected");
+                System.out.print(levelZeroOne);
+                System.out.print("Enter an option: ");
+                int numlevelZeroOne = input.nextInt();
+                switch (numlevelZeroOne) {
+                    case 1 -> System.out.println("Search selected");
+                    case 2 -> System.out.println("Service Nos selected");
+                    case 3 -> System.out.println("Add Name selected");
+                    case 4 -> System.out.println("Erase selected");
+                    case 5 -> System.out.println("Edit selected");
+                    case 6 -> System.out.println("Assign tone selected");
+                    case 7 -> System.out.println("Send b'Card selected");
+                    case 8 -> {
+                        boolean islevelZeroOneEight = true;
+
+                        while (islevelZeroOneEight) {
+                            System.out.println("Options");
+                            System.out.print(levelZeroOneEight);
+                            System.out.print("Enter an option: ");
+                            int numlevelZeroOneEight = input.nextInt();
+                            switch (numlevelZeroOneEight) {
+                                case 1 -> System.out.println("Type of view");
+                                case 2 -> System.out.println("Memory Status");
+                                case 0 -> {
+                                    System.out.println("Back");
+                                    islevelZeroOneEight = false;
+                                }
+                                default -> System.out.println("Invalid option");
+                            }  
+                        }
+                    }
+                    case 9 -> System.out.println("Speed dials selected");
+                    case 10 -> System.out.println("Voice tags selected");
+                    case 0 -> {System.out.println("Back");
+                        islevelZeroOne = false;
+                    }
+                    default -> System.out.println("Invalid option");
+                }   
+                }
 
             }
-            case 2 -> {System.out.println("Messages selected");
+            case 2 -> {
+                boolean islevelZeroTwo = true;
+
+                while (islevelZeroTwo) {
+                                  System.out.println("Messages selected");
                         System.out.print(levelZeroTwo);
         System.out.print("Enter an option: ");
         int numlevelZeroTwo = input.nextInt();
@@ -223,25 +240,38 @@ public class NokiaSwitchWithBack {
             case 4 -> System.out.println("Picture Messages");
             case 5 -> System.out.println("Templates");
             case 6 -> System.out.println("Smileys");
-            case 7 -> {System.out.println("Message Settings");
+            case 7 -> {
+                boolean islevelZeroTwoSeven = true;
+
+                while (islevelZeroTwoSeven) {
+                                System.out.println("Message Settings");
                         System.out.print(levelZeroTwoSeven);
         System.out.print("Enter an option: ");
         int numlevelZeroTwoSeven = input.nextInt();
         switch (numlevelZeroTwoSeven) {
-            case 1 -> {System.out.println("Set 1");
-
-                 System.out.print(levelZeroTwoSevenOne);
-        System.out.print("Enter an option: ");
-        int numlevelZeroTwoSevenOne = input.nextInt();
-        switch (numlevelZeroTwoSevenOne) {
-            case 1 -> System.out.println("Message centre number");
-            case 2 -> System.out.println("Message sent as");
-            case 3 -> System.out.println("Message validity");
-            case 0 -> System.out.println("Back");
-            default -> System.out.println("Invalid option");
-        }
+            case 1 -> {
+                boolean islevelZeroTwoSevenOne = true;
+                while (islevelZeroTwoSevenOne) {
+                    System.out.println("Set 1");
+                    System.out.print(levelZeroTwoSevenOne);
+                    System.out.print("Enter an option: ");
+                    int numlevelZeroTwoSevenOne = input.nextInt();
+                    switch (numlevelZeroTwoSevenOne) {
+                        case 1 -> System.out.println("Message centre number");
+                        case 2 -> System.out.println("Message sent as");
+                        case 3 -> System.out.println("Message validity");
+                        case 0 -> {System.out.println("Back");
+                            islevelZeroTwoSevenOne = false;
+                        }
+                        default -> System.out.println("Invalid option");
+                    }   
+                }
             }
-            case 2 -> {System.out.println("Common");
+            case 2 -> {
+                boolean islevelZeroTwoSevenTwo = true;
+
+                while (islevelZeroTwoSevenTwo) {
+                       System.out.println("Common");
                          System.out.print(levelZeroTwoSevenTwo);
                         System.out.print("Enter an option: ");
                         int numlevelZeroTwoSevenTwo = input.nextInt();
@@ -249,22 +279,32 @@ public class NokiaSwitchWithBack {
                             case 1 -> System.out.println("Delivery reports");
                             case 2 -> System.out.println("Reply via Same Center");
                             case 3 -> System.out.println("Character support");
-                            case 0 -> System.out.println("Back");
+                            case 0 -> {System.out.println("Back");
+                                islevelZeroTwoSevenTwo = false;
+                            }
                             default -> System.out.println("Invalid option");
-        }
+        }   
+                }
+          
             }
             case 0 -> System.out.println("Back");
             default -> System.out.println("Invalid option");
-}
 
-
+        }
+ 
+                }
+   
             }
             case 8 -> System.out.println("Info Service");
             case 9 -> System.out.println("Voice Mailbox Number");
             case 10 -> System.out.println("Service Command editor");
-            case 0 -> System.out.println("Back");
+            case 0 -> {System.out.println("Back");
+                islevelZeroTwo = false;
+            }
             default -> System.out.println("Invalid option");
         }
+                }
+  
 
             }
             case 3 -> System.out.println("Chat selected");
@@ -278,7 +318,10 @@ public class NokiaSwitchWithBack {
             case 3 -> System.out.println("Dialed Number");
             case 4 -> System.out.println("Erase recent call lists");
             case 5 -> {
-                System.out.println("Show call duration");
+                boolean islevelZeroFourFive = true;
+
+                while (islevelZeroFourFive) {
+                      System.out.println("Show call duration");
                    System.out.print(levelZeroFourFive);
                 System.out.print("Enter an option: ");
                 int numlevelZeroFourFive = input.nextInt();
@@ -288,12 +331,19 @@ public class NokiaSwitchWithBack {
                     case 3 -> System.out.println("Received calls duration");
                     case 4 -> System.out.println("Dialled calls duration");
                     case 5 -> System.out.println("Clear timer");
-                    case 0 -> System.out.println("Back");
+                    case 0 -> {System.out.println("Back");
+                        islevelZeroFourFive = false;
+                    }
                     default -> System.out.println("Invalid option");
-        }
+        }  
+                }
+            
             }
             case 6 -> {
-                System.out.println("Show call cost");
+                boolean islevelZeroFourSix = true;
+
+                while (islevelZeroFourSix) {
+                                 System.out.println("Show call cost");
                         System.out.print(levelZeroFourSix);
                 System.out.print("Enter an option: ");
                 int numlevelZeroFourSix = input.nextInt();
@@ -301,21 +351,31 @@ public class NokiaSwitchWithBack {
                     case 1 -> System.out.println("Last call cost");
                     case 2 -> System.out.println("All call cost");
                     case 3 -> System.out.println("Clear counters");
-                    case 0 -> System.out.println("Back");
+                    case 0 -> {System.out.println("Back");
+                        islevelZeroFourSix = false;
+                    }
                     default -> System.out.println("Invalid option");
-        }
+        }   
+                }
+
             }
-            case 7 -> {
-                System.out.println("Call cost settings");
+            case 7 -> { 
+                boolean islevelZeroFourSeven = true;
+                while (islevelZeroFourSeven) {
+                 System.out.println("Call cost settings");
                  System.out.print(levelZeroFourSeven);
                 System.out.print("Enter an option: ");
                 int numlevelZeroFourSeven = input.nextInt();
                 switch (numlevelZeroFourSeven) {
                     case 1 -> System.out.println("Call cost limit");
                     case 2 -> System.out.println("Show costs in");
-                    case 0 -> System.out.println("Back");
+                    case 0 -> {System.out.println("Back");
+                        islevelZeroFourSeven = false;
+                    }
                     default -> System.out.println("Invalid option");
-        }
+        }   
+                }
+                
             }
             case 8 -> System.out.println("Prepaid Credit");
             case 0 -> System.out.println("Back");
